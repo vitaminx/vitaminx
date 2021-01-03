@@ -1,6 +1,5 @@
 ### ⚡ A programmer who doesn't understand code 👋
-![](https://github-readme-stats.vercel.app/api?username=vitaminx&show_icons=true&icon_color=0366d6&text_color=24292e&bg_color=ffffff&hide_title=true)
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=vitaminx&layout=compact)
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=vitaminx&show_icons=true$card_width=800&theme=merko)](https://github.com/vitaminx/github-readme-stats)
 
 
 <!--
@@ -16,7 +15,7 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
-[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=vitaminx&show_icons=true$card_width=800&theme=merko)](https://github.com/vitaminx/github-readme-stats)
+
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=vitaminx&show_icons&theme=merko)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vitaminx&show_icons=true&theme=merko)](https://github.com/vitaminx/github-readme-stats)
 
