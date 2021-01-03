@@ -1,4 +1,4 @@
-### ⚡ This is a programmer who doesn't understand code 👋
+### ⚡ A programmer who doesn't understand code 👋
 [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=vitaminx&show_icons=true$card_width=800&theme=merko)](https://github.com/vitaminx/github-readme-stats)
 
 <!--
