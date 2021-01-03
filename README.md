@@ -1,4 +1,4 @@
-![](https://github-readme-stats.vercel.app/api?username=vitaminx&show_icons=true$card_width=800&theme=merko)
+![](https://github-readme-stats.vercel.app/api?username=vitaminx&show_icons=true&theme=merko)
 
 <!--
 **vitaminx/vitaminx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
