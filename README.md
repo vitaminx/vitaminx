@@ -1,6 +1,6 @@
 ### ⚡ This is a programmer who doesn't understand code 👋
-[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=vitaminx&show_icons=true&theme=merko$locale=cn)](https://github.com/vitaminx/github-readme-stats)
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=vitaminx&show_icons&theme=merko)
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=vitaminx&show_icons=true$locale=cn&theme=merko)](https://github.com/vitaminx/github-readme-stats)
+
 <!--
 **vitaminx/vitaminx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -14,4 +14,8 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
+
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=vitaminx&show_icons&theme=merko)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vitaminx&show_icons=true&theme=merko)](https://github.com/vitaminx/github-readme-stats)
+
 -->
