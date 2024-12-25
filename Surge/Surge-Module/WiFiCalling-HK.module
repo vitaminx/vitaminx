@@ -1,0 +1,17 @@
+﻿#!name= 香港 WiFiCalling 开关
+#!desc= 香港手机卡开启 WiFiCalling 的相关配置
+#!category=OneKing 模块
+#!system=ios
+# 更新日期：2024.12.25
+
+#[General]
+# 允许在本地 VPN 上代理 Wi-Fi Call 流量
+#include-all-networks = true
+#include-cellular-services = true
+
+[Rule]
+# 地区检测
+DOMAIN-SUFFIX, gspe1-ssl.ls.apple.com, 🇭🇰 香港节点
+DOMAIN-SUFFIX, ls.apple.com, 🇭🇰 香港节点
+# UDP 流量走香港节点
+AND,((GEOIP,HK),(AND,((PROTOCOL,UDP),(OR,((DEST-PORT,500),(DEST-PORT,4500)))))), 🇭🇰 香港节点
