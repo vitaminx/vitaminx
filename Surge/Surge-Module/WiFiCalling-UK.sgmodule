@@ -3,6 +3,8 @@
 #!category=OneKing 模块
 #!system=ios
 # 更新日期：2024.12.25
+# 🔗 模块链接
+#SUBSCRIBED https://raw.githubusercontent.com/vitaminx/vitaminx/refs/heads/main/Surge/Surge-Module/WiFiCalling-UK.sgmodule
 
 [General]
 # 允许在本地 VPN 上代理 Wi-Fi Call 流量
@@ -16,9 +18,9 @@ DOMAIN-SUFFIX, ls.apple.com, 🇬🇧 英国节点
 # UDP 流量走香港节点
 AND,((GEOIP,GB),(AND,((PROTOCOL,UDP),(OR,((DEST-PORT,500),(DEST-PORT,4500)))))), 🇬🇧 英国节点
 # 开 WiFiCalling ：CMLinkUK EE
-IP-CIDR,46.68.0.0/17, 🇬🇧 英国节点
+IP-CIDR,46.68.0.0/17, 🇬🇧 英国节点,no-resolve
 # 开 WiFiCalling ：Giffgaff
-IP-CIDR,87.194.0.0/16, 🇬🇧 英国节点
+IP-CIDR,87.194.0.0/16, 🇬🇧 英国节点,no-resolve
 # 开 WiFiCalling ：Vodafone UK
 DOMAIN-SUFFIX,vodafone.co.uk, 🇬🇧 英国节点
 DOMAIN,entsrv-uk.vodafone.com, 🇬🇧 英国节点
@@ -29,15 +31,15 @@ DOMAIN-SUFFIX, ss.epdg.epc.mnc015.mcc234.pub.3gppnetwork.org, 🇬🇧 英国节
 DOMAIN-SUFFIX, ss.epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org, 🇬🇧 英国节点
 DOMAIN-SUFFIX, entsrv-uk.vodafone.com, 🇬🇧 英国节点
 DOMAIN-SUFFIX, vuk-gto.prod.ondemandconnectivity.com, 🇬🇧 英国节点
-IP-CIDR,88.82.0.0/19,no-resolve, 🇬🇧 英国节点
-IP-CIDR,148.252.160.0/19,no-resolve, 🇬🇧 英国节点
-IP-CIDR,172.67.140.185/32,no-resolve, 🇬🇧 英国节点
-IP-CIDR,104.21.40.247/32,no-resolve, 🇬🇧 英国节点
-IP-CIDR,85.205.100.0/24,no-resolve, 🇬🇧 英国节点 # This IP section is also used by Vodafone DE(Both of them use this for RCS)
+IP-CIDR,88.82.0.0/19,🇬🇧 英国节点,no-resolve
+IP-CIDR,148.252.160.0/19,🇬🇧 英国节点,no-resolve
+IP-CIDR,172.67.140.185/32,🇬🇧 英国节点,no-resolve
+IP-CIDR,104.21.40.247/32,🇬🇧 英国节点,no-resolve
+IP-CIDR,85.205.100.0/24,🇬🇧 英国节点,no-resolve # This IP section is also used by Vodafone DE(Both of them use this for RCS)
 # 开 WiFiCalling ：Three UK
 DOMAIN-SUFFIX,three.co.uk, 🇬🇧 英国节点
 DOMAIN,huk.prod.ondemandconnectivity.com, 🇬🇧 英国节点
 DOMAIN,esim-es-open-prod-tuk.esimcloud.net, 🇬🇧 英国节点
 DOMAIN-SUFFIX,mnc020.mcc234.pub.3gppnetwork.org, 🇬🇧 英国节点
-IP-CIDR,185.153.236.0/24,no-resolve, 🇬🇧 英国节点
-IP-CIDR,185.153.237.0/24,no-resolve, 🇬🇧 英国节点
+IP-CIDR,185.153.236.0/24,🇬🇧 英国节点,no-resolve
+IP-CIDR,185.153.237.0/24,🇬🇧 英国节点,no-resolve

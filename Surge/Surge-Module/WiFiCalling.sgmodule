@@ -3,6 +3,8 @@
 #!category=OneKing 模块
 #!system=ios
 # 更新日期：2024.12.25
+# 🔗 模块链接
+#SUBSCRIBED https://raw.githubusercontent.com/vitaminx/vitaminx/refs/heads/main/Surge/Surge-Module/WiFiCalling.sgmodule
 
 [General]
 # 允许在本地 VPN 上代理 Wi-Fi Call 流量
