@@ -15,6 +15,7 @@
 # 地区检测
 DOMAIN-SUFFIX, gspe1-ssl.ls.apple.com, 🇺🇲 美国节点
 DOMAIN-SUFFIX, ls.apple.com, 🇺🇲 美国节点
+# T-mobile
 DOMAIN, eas3.msg.t-mobile.com, 🇺🇲 美国节点
 DOMAIN, ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org, 🇺🇲 美国节点
 DOMAIN-SUFFIX, eas3.msg.t-mobile.com, 🇺🇲 美国节点
