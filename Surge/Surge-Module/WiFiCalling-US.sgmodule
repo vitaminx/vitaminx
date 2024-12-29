@@ -16,9 +16,9 @@
 DOMAIN-SUFFIX, gspe1-ssl.ls.apple.com, 🇺🇲 美国节点
 DOMAIN-SUFFIX, ls.apple.com, 🇺🇲 美国节点
 # T-mobile
-DOMAIN, eas3.msg.t-mobile.com, 🇺🇲 美国节点
-DOMAIN, ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org, 🇺🇲 美国节点
+#DOMAIN, eas3.msg.t-mobile.com, 🇺🇲 美国节点
+#DOMAIN, ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org, 🇺🇲 美国节点
 DOMAIN-SUFFIX, eas3.msg.t-mobile.com, 🇺🇲 美国节点
-DOMAIN-SUFFIX, t-mobile.com, 🇺🇲 美国节点
+#DOMAIN-SUFFIX, t-mobile.com, 🇺🇲 美国节点
 # UDP 流量走香港节点
 AND,((GEOIP,US),(AND,((PROTOCOL,UDP),(OR,((DEST-PORT,500),(DEST-PORT,4500)))))), 🇺🇲 美国节点
