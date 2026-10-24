@@ -1,6 +1,6 @@
 ﻿#!name= 香港 WiFiCalling 开关
 #!desc= 香港手机卡开启 WiFiCalling 的相关配置
-#!category=OneKing 模块
+#!category=01-OneKing
 #!system=ios
 # 更新日期：2024.12.25
 # 🔗 模块链接
@@ -17,3 +17,10 @@ DOMAIN-SUFFIX, gspe1-ssl.ls.apple.com, 🇭🇰 香港节点
 DOMAIN-SUFFIX, ls.apple.com, 🇭🇰 香港节点
 # UDP 流量走香港节点
 AND,((GEOIP,HK),(AND,((PROTOCOL,UDP),(OR,((DEST-PORT,500),(DEST-PORT,4500)))))), 🇭🇰 香港节点
+#DOMAIN-SUFFIX, gspe1-ssl.ls.apple.com, 🇭🇰 香港节点
+# ClubSIM
+DOMAIN-SUFFIX, csl.prod.ondemandconnectivity.com, 🇭🇰 香港节点
+DOMAIN-SUFFIX, hhk.prod.ondemandconnectivity.com, 🇭🇰 香港节点
+DOMAIN-SUFFIX, epdg.epc.mnc000.mcc454.pub.3gppnetwork.org, 🇭🇰 香港节点
+DOMAIN-SUFFIX, ss.epdg.epc.mnc000.mcc454.pub.3gppnetwork.org, 🇭🇰 香港节点
+DOMAIN-SUFFIX, ss.epdg.epc.geo.mnc000.mcc454.pub.3gppnetwork.org, 🇭🇰 香港节点

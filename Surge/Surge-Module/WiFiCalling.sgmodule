@@ -1,6 +1,6 @@
 ﻿#!name= WiFiCalling 基础配置
 #!desc= 适用于所有地区手机卡开启 WiFiCalling 的基础配置，建议在此基础上再开启对应地区模块
-#!category=OneKing 模块
+#!category=01-OneKing
 #!system=ios
 # 更新日期：2024.12.25
 # 🔗 模块链接
