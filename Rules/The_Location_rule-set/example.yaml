@@ -1,0 +1,207 @@
+# WiFi Calling 正确配置示例
+# 
+# 重要说明：
+# WiFi Calling 必须通过对应国家的代理节点才能正常工作
+# 不能使用 DIRECT（直连），否则无法连接到运营商服务器
+#
+# 使用方法：
+# 1. 根据您的运营商所在国家，选择对应的国家节点组
+# 2. 将规则配置中的策略组名称替换为您实际使用的策略组名称
+# 3. 如果有多个运营商，可以创建多个规则集分别处理
+
+# ========================================
+# 方案一：单运营商配置（推荐）
+# ========================================
+proxy-groups:
+  # 根据运营商所在国家创建对应的策略组
+  - name: 🇺🇸 美国节点
+    type: select
+    use:
+      - your-proxy-provider  # 替换为您的代理提供者名称
+    filter: '(?i)美|美国|us|united states|america'
+  
+  - name: 🇬🇧 英国节点
+    type: select
+    use:
+      - your-proxy-provider
+    filter: '(?i)英|英国|uk|united kingdom|britain'
+  
+  - name: 🇨🇦 加拿大节点
+    type: select
+    use:
+      - your-proxy-provider
+    filter: '(?i)加拿大|canada|ca'
+  
+  - name: 📞 WiFi Calling
+    type: select
+    proxies:
+      - 🇺🇸 美国节点  # 美国运营商选这个
+      - 🇬🇧 英国节点  # 英国运营商选这个
+      - 🇨🇦 加拿大节点  # 加拿大运营商选这个
+    # 根据您的实际情况，可以删除不需要的选项
+
+rule-providers:
+  wificalling:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/CherryMian/the_clash_ruleset/main/The_Location_rule-set/wificalling.yaml"
+    path: ./ruleset/wificalling.yaml
+    interval: 86400
+
+rules:
+  # WiFi Calling 规则 - 使用专用策略组
+  - RULE-SET,wificalling,📞 WiFi Calling
+  # ... 其他规则
+
+# ========================================
+# 方案二：多运营商配置
+# ========================================
+# 如果您使用多张不同国家的 SIM 卡，需要为每个运营商配置独立规则
+
+proxy-groups:
+  - name: 🇺🇸 美国节点
+    type: select
+    use:
+      - your-proxy-provider
+    filter: '(?i)美|美国|us|united states'
+  
+  - name: 🇬🇧 英国节点
+    type: select
+    use:
+      - your-proxy-provider
+    filter: '(?i)英|英国|uk|united kingdom'
+  
+  - name: 📞 AT&T WiFi Calling
+    type: select
+    proxies:
+      - 🇺🇸 美国节点
+  
+  - name: 📞 Vodafone WiFi Calling
+    type: select
+    proxies:
+      - 🇬🇧 英国节点
+
+rule-providers:
+  # AT&T WiFi Calling（美国）
+  wificalling-att:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/CherryMian/the_clash_ruleset/main/The_Location_rule-set/wificalling-us-att.yaml"
+    path: ./ruleset/wificalling-att.yaml
+    interval: 86400
+  
+  # Vodafone WiFi Calling（英国）
+  wificalling-vodafone:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/CherryMian/the_clash_ruleset/main/The_Location_rule-set/wificalling-uk-vodafone.yaml"
+    path: ./ruleset/wificalling-vodafone.yaml
+    interval: 86400
+
+rules:
+  # 按运营商分配不同的策略组
+  - RULE-SET,wificalling-att,📞 AT&T WiFi Calling
+  - RULE-SET,wificalling-vodafone,📞 Vodafone WiFi Calling
+  # ... 其他规则
+
+# ========================================
+# 方案三：自动选择最优节点
+# ========================================
+# 使用 url-test 或 fallback 自动选择延迟最低的节点
+
+proxy-groups:
+  - name: 🇺🇸 美国-自动
+    type: url-test  # 自动选择延迟最低的节点
+    use:
+      - your-proxy-provider
+    filter: '(?i)美|美国|us|united states'
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300  # 每 5 分钟测试一次
+    tolerance: 50  # 延迟差距在 50ms 内不切换节点
+  
+  - name: 🇺🇸 美国-手动
+    type: select  # 手动选择节点
+    use:
+      - your-proxy-provider
+    filter: '(?i)美|美国|us|united states'
+  
+  - name: 📞 WiFi Calling
+    type: select
+    proxies:
+      - 🇺🇸 美国-自动  # 推荐：自动选择最优节点
+      - 🇺🇸 美国-手动  # 备选：手动指定节点
+
+rule-providers:
+  wificalling:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/CherryMian/the_clash_ruleset/main/The_Location_rule-set/wificalling.yaml"
+    path: ./ruleset/wificalling.yaml
+    interval: 86400
+
+rules:
+  - RULE-SET,wificalling,📞 WiFi Calling
+  # ... 其他规则
+
+# ========================================
+# 常见运营商国家对应表
+# ========================================
+# 美国：AT&T, T-Mobile, Verizon
+# 英国：Vodafone, EE, O2, Three
+# 加拿大：Rogers, Bell, Telus
+# 澳大利亚：Telstra, Optus, Vodafone
+# 新西兰：Spark, Vodafone, 2degrees
+# 日本：NTT Docomo, au, SoftBank
+# 韩国：SK Telecom, KT, LG U+
+# 新加坡：Singtel, StarHub, M1
+# 香港：中国移动, CSL, 3HK
+
+# ========================================
+# 错误配置示例（请勿使用）
+# ========================================
+# ❌ 错误 1: 使用 DIRECT
+# rules:
+#   - RULE-SET,wificalling,DIRECT  # 错误！WiFi Calling 无法直连
+
+# ❌ 错误 2: 使用错误的国家节点
+# rules:
+#   - RULE-SET,wificalling,🇯🇵 日本节点  # 如果是美国运营商，这样配置会导致无法连接
+
+# ❌ 错误 3: 使用全局代理组
+# rules:
+#   - RULE-SET,wificalling,🚀 节点选择  # 不推荐，可能会选择到错误国家的节点
+
+# ========================================
+# 调试和测试
+# ========================================
+# 1. 查看 Clash 日志确认规则加载成功
+# 2. 测试 WiFi Calling 连接：
+#    - 打开手机的 WiFi Calling 功能
+#    - 确认状态栏显示 WiFi Calling 图标
+#    - 拨打测试电话
+# 3. 如果无法连接，检查：
+#    - 节点是否在线且延迟正常
+#    - 节点所在国家是否正确
+#    - 防火墙是否阻止相关端口
+#    - 运营商是否支持 WiFi Calling
+
+# ========================================
+# 性能优化建议
+# ========================================
+# 1. 使用低延迟节点
+# 2. 启用节点健康检查
+proxy-groups:
+  - name: 🇺🇸 美国节点
+    type: url-test
+    use:
+      - your-proxy-provider
+    filter: '(?i)美|美国|us'
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    tolerance: 50
+    lazy: false  # 启用后台持续测试
+
+# 3. 合理设置更新间隔
+rule-providers:
+  wificalling:
+    interval: 86400  # WiFi Calling 规则相对稳定，24 小时更新一次即可
