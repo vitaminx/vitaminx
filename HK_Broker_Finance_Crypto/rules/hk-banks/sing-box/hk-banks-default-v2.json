@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "api.sc.com"
+      ],
+      "domain_suffix": [
+        "antbank.hk",
+        "asia.ccb.com",
+        "bank.za.group",
+        "bankcomm.com.hk",
+        "bankofchina.com.hk",
+        "bochk.com",
+        "bocpay.com.hk",
+        "ccb.com.hk",
+        "chbank.com",
+        "chiyubank.com",
+        "citi.com.hk",
+        "citibank.com.hk",
+        "cmbwinglungbank.com",
+        "cncbinternational.com",
+        "dahsing.com",
+        "dahsing.com.hk",
+        "dbs.com.hk",
+        "elebank.com",
+        "fubonbank.com.hk",
+        "fusionbank.com",
+        "hangseng.com",
+        "hkbea.com",
+        "hsbc.com.hk",
+        "icbcasia.com",
+        "livibank.com",
+        "mox.com",
+        "ncb.com.hk",
+        "ocbc.com.hk",
+        "ocbcwhhk.com",
+        "paob.com.hk",
+        "publicbank.com.hk",
+        "shacombank.com.hk",
+        "standardchartered.com.hk",
+        "tybhk.com.hk",
+        "welab.bank",
+        "winglungbank.com"
+      ]
+    }
+  ]
+}

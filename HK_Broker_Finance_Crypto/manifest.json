@@ -1,0 +1,319 @@
+{
+  "title": "Crypto + Hong Kong Brokerage + Hong Kong Banks",
+  "snapshot_date": "2026-10-26",
+  "client_support": [
+    "Clash / Mihomo",
+    "Egern",
+    "Loon",
+    "Quantumult X",
+    "Shadowrocket",
+    "sing-box",
+    "Stash",
+    "Surge"
+  ],
+  "policies_are_not_embedded": true,
+  "binary_srs_included": false,
+  "groups": {
+    "crypto": {
+      "default": {
+        "exact": 6,
+        "suffix": 396,
+        "keyword": 15,
+        "total": 417
+      },
+      "expanded": {
+        "exact": 6,
+        "suffix": 413,
+        "keyword": 64,
+        "total": 483
+      }
+    },
+    "hk-brokers": {
+      "default": {
+        "exact": 3,
+        "suffix": 141,
+        "keyword": 0,
+        "total": 144
+      },
+      "expanded": {
+        "exact": 3,
+        "suffix": 145,
+        "keyword": 0,
+        "total": 148
+      }
+    },
+    "hk-banks": {
+      "default": {
+        "exact": 1,
+        "suffix": 36,
+        "keyword": 0,
+        "total": 37
+      },
+      "expanded": {
+        "exact": 0,
+        "suffix": 44,
+        "keyword": 0,
+        "total": 44
+      }
+    },
+    "crypto-directory": {
+      "default": {
+        "exact": 0,
+        "suffix": 51,
+        "keyword": 0,
+        "total": 51
+      }
+    }
+  },
+  "source_urls_unique": 37,
+  "files": {
+    "README_中文说明.md": {
+      "bytes": 5187,
+      "sha256": "dfa315effff69ea57c1f10daad7816366ab8209f31188b013ab6a390317f72f9"
+    },
+    "data/catalog_crypto_additions.tsv": {
+      "bytes": 3675,
+      "sha256": "979b96eb46608b145b4f7714e9a827ea1778089c5f585f877c51352251c06c58"
+    },
+    "data/catalog_hk-banks.tsv": {
+      "bytes": 1234,
+      "sha256": "c7485905d260404efdba0d7eb4308161e5bc3e2504dcfffbf974dba8465508f4"
+    },
+    "data/catalog_hk-brokers.tsv": {
+      "bytes": 4722,
+      "sha256": "d411d6d6709febe9c0a1cba51df55918ba2b8d12369fa103651075df63dc75af"
+    },
+    "data/crypto-directory.json": {
+      "bytes": 1307,
+      "sha256": "a0d1b18342734d626d36ff4bf95b8fa2a87d9d52ad149889deaf643d779e74c9"
+    },
+    "data/crypto.json": {
+      "bytes": 19640,
+      "sha256": "700fb7059ede96fe6de51b705174f421dd95077b98ebbb2de0e0001ffd8ba620"
+    },
+    "data/hk-banks.json": {
+      "bytes": 2046,
+      "sha256": "cd5ce2971f26de929281a1936f308cb42ce18448a993eaa8c033ff98cd71144a"
+    },
+    "data/hk-brokers.json": {
+      "bytes": 7111,
+      "sha256": "97208f254588f9dcc822af762a5f8564bd7548002b00e848a2ccd4d33aab55a2"
+    },
+    "docs/CHANGES_更新记录.md": {
+      "bytes": 1654,
+      "sha256": "374ebe0c60d8b5a13d910e2a445607edeee19c6544e01daf5518c526f196542a"
+    },
+    "docs/CONFIG_导入示例.md": {
+      "bytes": 5446,
+      "sha256": "2873157187cc868411b959a268bac04d1b4260924f8ca681b004f223827f0fdc"
+    },
+    "docs/REVIEW_审计说明.md": {
+      "bytes": 5044,
+      "sha256": "3378f273c2316dbeabd73fec755906bfeb2041f6a04818cafc3ccaaac6d01e59"
+    },
+    "docs/SOURCES_来源.md": {
+      "bytes": 4601,
+      "sha256": "39b91277a0728189b8c5b7af76f4e0bfb3d089ea419c22aa73df9da52f349ad5"
+    },
+    "review/DO_NOT_IMPORT_broker_upstream_ip_cidrs.txt": {
+      "bytes": 1274,
+      "sha256": "233d14b4a4ee9002920d337999dbf0ec0a2d9681ee655458f574d6a5ec8b4c53"
+    },
+    "rules/crypto-directory/clash-stash/crypto-directory-default-classical.yaml": {
+      "bytes": 1818,
+      "sha256": "843f7dcb0156e512cdbfa396425a3e17ef1a9498e1f6eca8d70615a8fee6b0dc"
+    },
+    "rules/crypto-directory/clash-stash/crypto-directory-default-domain.yaml": {
+      "bytes": 1230,
+      "sha256": "6e1f334b8d4772051a12e5cb501de031bf77f886fc9933c9b25f56ac22203e04"
+    },
+    "rules/crypto-directory/egern/crypto-directory-default.yaml": {
+      "bytes": 1011,
+      "sha256": "a4fffb5cd4e25e4a53c24443be4e15688d7f21446931c44011c1237cd6da4427"
+    },
+    "rules/crypto-directory/quantumult-x/crypto-directory-default.list": {
+      "bytes": 1463,
+      "sha256": "65a909bb556dd56067f00c4a5167b9d17fbf5bfa98dc7c1d7e2811860cd6b1e6"
+    },
+    "rules/crypto-directory/sing-box/crypto-directory-default-v2.json": {
+      "bytes": 1347,
+      "sha256": "3b5d03eb73bb7149e9661e488077e31ba14d2426871c171d358a50f6418d44fd"
+    },
+    "rules/crypto-directory/sing-box/crypto-directory-default-v4.json": {
+      "bytes": 1347,
+      "sha256": "1ec715ba9a4c08901e9160ebe7135b04386be39a2388639e66bb2e1ad613b19b"
+    },
+    "rules/crypto-directory/surge-loon-shadowrocket/crypto-directory-default.list": {
+      "bytes": 1581,
+      "sha256": "23e2e67ff5000accd77b8667ac5e62df4fbaeab8b83a81cb0916ee64084d888a"
+    },
+    "rules/crypto/clash-stash/crypto-default-classical.yaml": {
+      "bytes": 13723,
+      "sha256": "748665770e0ddce7a344afba33d652863b90dd496ab161aef04cb80a0795e732"
+    },
+    "rules/crypto/clash-stash/crypto-default-domain.yaml": {
+      "bytes": 8499,
+      "sha256": "b4ea73540d0ab2adbdf5e6657d1819450a93e497f57e25517ee57e51349e5755"
+    },
+    "rules/crypto/clash-stash/crypto-expanded-classical.yaml": {
+      "bytes": 15737,
+      "sha256": "76c0c9fdab8a6ebdb72a20e76b7df2b231f01c06159e9b20f3b3d257b2818abd"
+    },
+    "rules/crypto/clash-stash/crypto-expanded-domain.yaml": {
+      "bytes": 8820,
+      "sha256": "4aff0c355900fad273f743ea5894fc5d68b228cd22b1936ebb4a63e5358bdb7d"
+    },
+    "rules/crypto/egern/crypto-default.yaml": {
+      "bytes": 7119,
+      "sha256": "2aff6fb5ca6ef27f4be8a66b5c1ed597f211971ab7489e96e171a1a026080771"
+    },
+    "rules/crypto/egern/crypto-expanded.yaml": {
+      "bytes": 8028,
+      "sha256": "e9eaa38c3e7e6953017c9539810b495cda954ed7e15137c9335cdf263fe9f622"
+    },
+    "rules/crypto/quantumult-x/crypto-default.list": {
+      "bytes": 10440,
+      "sha256": "a4981bf84f9708211eb50a5c2545f0969ef29b0836cdfe91d2c5ae141cb26c9b"
+    },
+    "rules/crypto/quantumult-x/crypto-expanded.list": {
+      "bytes": 11926,
+      "sha256": "d04b98c539813d23b99189bae160d7094aff79be3882940f1175ed6a066cb378"
+    },
+    "rules/crypto/sing-box/crypto-default-v2.json": {
+      "bytes": 10054,
+      "sha256": "376301d7379675ab9ca51da45763ef4f994f1268cf0a9785ffc46d3b5890949e"
+    },
+    "rules/crypto/sing-box/crypto-default-v4.json": {
+      "bytes": 10054,
+      "sha256": "01b35771045ade4fa4547131fbe2115fc781bde246af933233ec51f950002bf2"
+    },
+    "rules/crypto/sing-box/crypto-expanded-v2.json": {
+      "bytes": 11425,
+      "sha256": "67845adf92de887177061eba7c6dbf3816af8de6cdc43781ef284f0d3b8b2be9"
+    },
+    "rules/crypto/sing-box/crypto-expanded-v4.json": {
+      "bytes": 11425,
+      "sha256": "f023b30d1fadc310c5067df4aa45c428d9474bb143155def4aaded152bcc1eaf"
+    },
+    "rules/crypto/surge-loon-shadowrocket/crypto-default.list": {
+      "bytes": 11290,
+      "sha256": "7068843a7beb67ee117cd9cca72994c3bf99ee6dad1c6078a580858e39ca65e0"
+    },
+    "rules/crypto/surge-loon-shadowrocket/crypto-expanded.list": {
+      "bytes": 12908,
+      "sha256": "f229f957277885e62e3ea99a0d6b7074a34af54f4feb279d4845fd6bb32cf402"
+    },
+    "rules/hk-banks/clash-stash/hk-banks-default-classical.yaml": {
+      "bytes": 1320,
+      "sha256": "d9f764b3634f7d7c4e735e39626a44360951ae33e2ae36786285be0afd25206c"
+    },
+    "rules/hk-banks/clash-stash/hk-banks-default-domain.yaml": {
+      "bytes": 905,
+      "sha256": "a4d7c88868f9b95873f7b991444d1cb55a04de0d36b583c8ef28bf3964244661"
+    },
+    "rules/hk-banks/clash-stash/hk-banks-expanded-classical.yaml": {
+      "bytes": 1535,
+      "sha256": "bdbfb58ef4b211936c64ba46e4691b38db673e0ee86a08418aa7e2c1c07d39b6"
+    },
+    "rules/hk-banks/clash-stash/hk-banks-expanded-domain.yaml": {
+      "bytes": 1031,
+      "sha256": "c5cc8dfa2008e233229036f5fa551c7d6092f3cc7ec6439c0a3c092344a176ed"
+    },
+    "rules/hk-banks/egern/hk-banks-default.yaml": {
+      "bytes": 756,
+      "sha256": "387d5633a053037528d1ca5a670324b0f73c12265eba928eb830d895c9c64bee"
+    },
+    "rules/hk-banks/egern/hk-banks-expanded.yaml": {
+      "bytes": 840,
+      "sha256": "e70ee29181a8e9bc0c2fbba46c7b47eaff6888b05b201b48e2f22294523fdcd0"
+    },
+    "rules/hk-banks/quantumult-x/hk-banks-default.list": {
+      "bytes": 1077,
+      "sha256": "c9251cfe1380b747dc2a7f4872b9c619e52164f72a56a5d123460996bb3ca609"
+    },
+    "rules/hk-banks/quantumult-x/hk-banks-expanded.list": {
+      "bytes": 1236,
+      "sha256": "4f5ce058e7daf1630d758ed902badd35e9f0b7378b6bccc370f0ff7b054b0c5a"
+    },
+    "rules/hk-banks/sing-box/hk-banks-default-v2.json": {
+      "bytes": 1029,
+      "sha256": "765dfd4d2e3c5491eb09f94d5fb7fe429d536d8a59639c55927a9eed4098e81e"
+    },
+    "rules/hk-banks/sing-box/hk-banks-default-v4.json": {
+      "bytes": 1029,
+      "sha256": "44c084bb1e51499ae60ee1ada0b65440186adc6b60fe1908b530480eb712527e"
+    },
+    "rules/hk-banks/sing-box/hk-banks-expanded-v2.json": {
+      "bytes": 1148,
+      "sha256": "fa3a4b44525e59ec52e994a5b3e0214e79c5fb2bd80ae59d4b5d06496700ca24"
+    },
+    "rules/hk-banks/sing-box/hk-banks-expanded-v4.json": {
+      "bytes": 1148,
+      "sha256": "726ac9b2e16c4743955ff79fee29543bd09483286ec3f94dc271b6e15128602f"
+    },
+    "rules/hk-banks/surge-loon-shadowrocket/hk-banks-default.list": {
+      "bytes": 1167,
+      "sha256": "38cf633a96a3b63d35c82dec89dfccf8d393b4e6b9409ce145c4cee3dfed2965"
+    },
+    "rules/hk-banks/surge-loon-shadowrocket/hk-banks-expanded.list": {
+      "bytes": 1340,
+      "sha256": "0bac501fe91ac7a4ee6bbf49578f1c534f3314973c36974e90ebc9783df66eb3"
+    },
+    "rules/hk-brokers/clash-stash/hk-brokers-default-classical.yaml": {
+      "bytes": 5050,
+      "sha256": "db204047a5d6130d3547cf4fb9665c5aebf6d69aa53def7c3e3f610fa8dd9194"
+    },
+    "rules/hk-brokers/clash-stash/hk-brokers-default-domain.yaml": {
+      "bytes": 3361,
+      "sha256": "ade7c20ad332de6c5836f93f0004ec0e524ecfb2dc34181a06166332c5ea23fa"
+    },
+    "rules/hk-brokers/clash-stash/hk-brokers-expanded-classical.yaml": {
+      "bytes": 5167,
+      "sha256": "35b117d986cee4cb550fc005652caafc3384b2c5e68d1b48105258ead448782f"
+    },
+    "rules/hk-brokers/clash-stash/hk-brokers-expanded-domain.yaml": {
+      "bytes": 3430,
+      "sha256": "13c3cc1e374490b8a887c6a18a7e879538c971f6d8881b55cd35e120f2ca765a"
+    },
+    "rules/hk-brokers/egern/hk-brokers-default.yaml": {
+      "bytes": 2788,
+      "sha256": "7e54fa1dc1106b7b1f1ffd458a735f9a00f3d72f15f4c2c7cfaa47180b1c35e1"
+    },
+    "rules/hk-brokers/egern/hk-brokers-expanded.yaml": {
+      "bytes": 2841,
+      "sha256": "dc24289f9780d7e226bd99372ac7291d81e734d9d1352a15eb36a7ffac7b7695"
+    },
+    "rules/hk-brokers/quantumult-x/hk-brokers-default.list": {
+      "bytes": 3951,
+      "sha256": "6e057ce9789357764e5b9204ca6c026928fd5a35b258aa5495ac043c8fb644db"
+    },
+    "rules/hk-brokers/quantumult-x/hk-brokers-expanded.list": {
+      "bytes": 4036,
+      "sha256": "e2240c63311cbc9e9e9a943a13b9fbf19cb8366c92a0ff3c7076fa0678da55c7"
+    },
+    "rules/hk-brokers/sing-box/hk-brokers-default-v2.json": {
+      "bytes": 3795,
+      "sha256": "06a78c9603175d1c2694e0dcce358e2b84869e070a557a317c21621f43d26d8e"
+    },
+    "rules/hk-brokers/sing-box/hk-brokers-default-v4.json": {
+      "bytes": 3795,
+      "sha256": "a86adbeadd4866bce768a724b699f40e09ad5c8d196008a725cb2e2be87cd012"
+    },
+    "rules/hk-brokers/sing-box/hk-brokers-expanded-v2.json": {
+      "bytes": 3876,
+      "sha256": "28b0a33e734886a7aae72afb8b8b14507c4cc873b12c8a5a7c1a7b0ab4cec6aa"
+    },
+    "rules/hk-brokers/sing-box/hk-brokers-expanded-v4.json": {
+      "bytes": 3876,
+      "sha256": "e077b603afc3c5ba4b184052ccdf2a83c17acec419748a6de3371c258c59d1f9"
+    },
+    "rules/hk-brokers/surge-loon-shadowrocket/hk-brokers-default.list": {
+      "bytes": 4255,
+      "sha256": "6abb1d504055964813b0f92873afaf80cce513472e45033ea53ec047e4c32da9"
+    },
+    "rules/hk-brokers/surge-loon-shadowrocket/hk-brokers-expanded.list": {
+      "bytes": 4348,
+      "sha256": "4f1615c9a1de31a85b202b622f27fbce871109d9faf8ab6a224e932376e8ce90"
+    }
+  }
+}
